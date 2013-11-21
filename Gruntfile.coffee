@@ -61,18 +61,21 @@ module.exports = (grunt) ->
 				dest: "dist"
 				expand: true
 
+			readme:
+				src: "README.md"
+				dest: "dist"
+				expand: true
+
 		clean:
 			dist: "dist"
 			cssUncompressed: ["dist/css/**/*.css", "!dist/css/**/*.min.css"]
 
 		"gh-pages":
 			options:
-				message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
+				message: "Rebuild site"
+				base: "dist"
 			src: [
-				"dist/**/*.*",
-				"*.html",
-				"*.md",
-				"*.txt"
+				"**/*.*"
 			]
 
 		connect:
