@@ -1,4 +1,4 @@
-a11yQc
+Gov 2.0 Meetup - November 21, 2013
 ======
 
-Présentation sur la Boîte à outils de l’expérience Web présenté à a11yQc en octobre 2013
+Presentation for http://www.meetup.com/gov20toronto/events/149214472/
