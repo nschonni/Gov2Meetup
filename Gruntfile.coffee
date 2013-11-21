@@ -49,8 +49,9 @@ module.exports = (grunt) ->
 			revealjs:
 				cwd: "lib/reveal.js"
 				src: [
-					"**/*.min.js",
+					"**/*.min.js"
 					"**/*.min.css"
+					"plugin/notes/*.*"
 				]
 				dest: "dist/reveal.js"
 				expand: true
