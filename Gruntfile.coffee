@@ -93,9 +93,6 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-gh-pages"
 	@loadNpmTasks "grunt-sass"
 
-	# Load custom grunt tasks form the tasks directory
-	@loadTasks "tasks"
-
 	# Default task.
 	@registerTask "default", ["dist"]
 	@registerTask "css", ["sass", "cssmin", "clean:cssUncompressed"]
